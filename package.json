@@ -4,7 +4,7 @@
   "main": "server/index.js",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently --raw \"cd server && nodemon server/index.js \" \"ng build --watch\" ",
+    "start": "concurrently --raw \"cd server && nodemon index.js \" \"ng build --watch\" ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
