@@ -1,0 +1,54 @@
+import { Component }        from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { AlertService } from '../../_services';
+import { AuthenticationService } from '../../_auth/authentication.service';
+import { store } from '../../_auth/current-user';
+import { User } from '../../_models/user'
+import { SHA3 } from 'sha3';
+
+@Component({
+  selector: 'app-loginPage',
+  templateUrl: './loginPage.component.html',
+  styleUrls: ['./loginPage.component.scss'],
+  providers: [  ]
+})
+export class LoginPageComponent {
+  message: string;
+  login;
+  loading = false;
+  submitted = false;
+  returnUrl: string;
+  
+  constructor(
+                private route: ActivatedRoute,
+                private router: Router,
+                //private securityService: SecurityService,
+                private authenticationService: AuthenticationService,
+                private alertService: AlertService
+              ) {
+    //this.setMessage();
+    //$(".loader").fadeOut("slow");
+    //this.authService.logout();
+    //this.authenticationService.logout();
+    //this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || 'dashboard/';
+  }
+
+
+  onSubmit(data) {    
+    //if (this.authenticationService.isLoggedIn){
+    if(data){
+      //location.reload();  
+      //console.log(this.authenticationService.isLoggedIn);
+      //this.setUser(data);
+      this.router.navigate(['dashboard/home']);
+    }else{
+      //this.alertService.error(data.statusText)
+      this.alertService.error("Login o contraseña no coinciden");
+    };
+  }
+    /*
+    private setUser(user: User) {
+        store.setUser(user);
+    }
+    //*/
+}

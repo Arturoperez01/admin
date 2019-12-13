@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.view.cover {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (42).jpg")no-repeat center center;
+    background-size: cover;
+    height: 110vh;
+}
+@media (min-width: 768px) {
+    .view.cover {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1050;
+}
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+  
+html {
+    height: 100% !important;
+  }
+  .card.card-cascade .view.gradient-card-header {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+  
+  .card.card.card-cascade.narrower {
+    margin-top: 3.45rem;
+  }
+
+  .card.card-cascade.narrower .view.view-cascade {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: -2.45rem;
+  }
+
+  .card.card-cascade h3,
+  .card.card-cascade h4
+  {
+    margin-bottom: 0px;
+  }
+  
+  .blue-gradient {
+    background: -webkit-linear-gradient(50deg, #45cafc, #303f9f);
+    background: linear-gradient(40deg, #45cafc, #4285f4);
+  }
+  
+  
+  .round {  
+            vertical-align: middle;
+            padding: 0;
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            height: 47px;
+            width: 47px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 5px 11px 0px, rgba(0, 0, 0, 0.15) 0px 4px 15px 0px;
+
+          }
+  .round i {
+              display: inline-block;
+              width: inherit;
+              text-align: center;
+              color: #fff;  
+              font-size: 1.25rem;
+              line-height: 47px;
+            }
+  
+  .round.btn-lg {
+            height: 61.0938px;
+            width: 61.0938px;
+          }
+          
+  .round.btn-lg i {
+            font-size: 16px;
+            line-height: 61.0938px;
+          }
+
+  .round.btn-sm {
+            height: 36.15385px;
+            width: 36.15385px;
+          }
+        
+  .round.btn-sm i {
+            font-size: .96154rem;
+            line-height: 36.15385px;
+          }
+
+    main.content-wrapper {
+      -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
+      -moz-transition: -moz-transform .3s ease-in-out,margin .3s ease-in-out;
+      -o-transition: -o-transform .3s ease-in-out,margin .3s ease-in-out;
+      transition: transform .3s ease-in-out,margin .3s ease-in-out;
+      margin-left: 270px !important;
+  
+    }  
